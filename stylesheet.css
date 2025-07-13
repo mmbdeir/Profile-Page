@@ -10,7 +10,6 @@
 
 body {
   font-family: "Tiktok Sans";
-  justify-items: center;
 }
 
 :root {
@@ -19,18 +18,23 @@ body {
   --dark-color: #111;
 }
 
+/* universal */
+
 ul {
   list-style-type: none;
 }
 
-/* universal */
-
-.p16 {
-  font-size: 16px;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.p20 {
-  font-size: 20px;
+.p18 {
+  font-size: 18px;
+}
+
+.p22 {
+  font-size: 22px;
 }
 
 .h48 {
@@ -41,19 +45,25 @@ ul {
   font-size: 64px;
 }
 
-.container {
+.btn {
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 20px 20px;
+  background-color: var(--light-color);
+}
+
+/* Navbar */
+
+.navbar .container {
   display: flex;
-  width: 1250px;
   align-items: center;
   justify-content: space-between;
 }
 
-.btn {
-  font-weight: 600;
-  border-radius: 10px;
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
 }
-
-/* Navbar */
 
 .navbar {
   padding: 30px;
@@ -65,8 +75,13 @@ ul {
 
 .navbar ul li a {
   padding: 10px 20px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
-.navbar ul li:last-child a {
+.navbar ul li:last-child {
+  margin-left: 10px;
+}
+
+.navbar ul li:last-child:hover {
+  cursor: pointer;
 }
