@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap");
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Tiktok Sans";
+  justify-items: center;
+}
+
+:root {
+  --primary-color: #4891ff;
+  --light-color: #f4f4f6;
+  --dark-color: #111;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* universal */
+
+.p16 {
+  font-size: 16px;
+}
+
+.p20 {
+  font-size: 20px;
+}
+
+.h48 {
+  font-size: 48px;
+}
+
+.h64 {
+  font-size: 64px;
+}
+
+.container {
+  display: flex;
+  width: 1250px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+/* Navbar */
+
+.navbar {
+  padding: 30px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li a {
+  padding: 10px 20px;
+  font-weight: 600;
+}
+
+.navbar ul li:last-child a {
+}
