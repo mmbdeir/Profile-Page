@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: "Tiktok Sans";
+  font-family: "Tiktok Sans", "sans-serif";
 }
 
 :root {
@@ -124,21 +124,34 @@ a {
 }
 
 .hamburger-button {
+  border: 0;
+  border-radius: 12px;
+  height: 45px;
+  width: 50px;
+  display: none;
+}
+
+.line-container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   border: none;
-  height: 40px;
-  width: 40px;
-  border-radius: 12px;
+  height: 25px;
 }
 
 .hamburger-line {
-  height: 1px;
+  height: 2px;
   width: 20px;
   background-color: var(--dark-color);
-  border: 0;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu-ul {
+  flex-direction: column;
 }
 
 /* Hero */
@@ -215,6 +228,12 @@ a {
     display: flex;
     width: 100%;
     margin-top: 40px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .hamburger-button {
+    display: block;
   }
 }
 
