@@ -123,6 +123,24 @@ a {
   border-radius: 10px;
 }
 
+.hamburger-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 12px;
+}
+
+.hamburger-line {
+  height: 1px;
+  width: 20px;
+  background-color: var(--dark-color);
+  border: 0;
+}
+
 /* Hero */
 
 .hero {
@@ -193,6 +211,7 @@ a {
     content: url("assets/hero-bg-mobile.png");
   }
   .hero-image-container {
+    justify-content: center;
     display: flex;
     width: 100%;
     margin-top: 40px;
