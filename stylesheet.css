@@ -148,10 +148,24 @@ a {
 
 .mobile-menu {
   display: none;
+  position: absolute;
+  top: 100%;
+  right: 15px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  z-index: 100;
+}
+
+.mobile-menu.show {
+  display: block;
 }
 
 .mobile-menu-ul {
+  display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 /* Hero */
