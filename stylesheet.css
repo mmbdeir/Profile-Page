@@ -398,6 +398,20 @@ a {
   padding-left: 1%;
 }
 
+.no-card {
+  font-size: 12px;
+  padding-left: 2%;
+}
+
+.line {
+  height: 1px;
+  margin: 20px 0 35px;
+  max-width: 100%;
+}
+
+.simple-line {
+  background-color: #dfdee2;
+}
 /* Media Queries */
 
 @media (max-width: 960px) {
