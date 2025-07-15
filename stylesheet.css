@@ -350,6 +350,7 @@ a {
   font-size: 14px;
   padding-top: var(--spacing-large);
   color: var(--grey-color);
+  text-align: center;
 }
 
 .month {
@@ -553,11 +554,30 @@ a {
     flex-direction: column;
     width: 100%;
   }
+  .price-cards {
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+  }
+  .price-card {
+    padding: 40px 30px;
+    width: 100%;
+  }
+  :root {
+    --spacing-small: 8px;
+    --spacing-medium: 12px;
+    --spacing-large: 20px;
+  }
 }
 
 @media (max-width: 500px) {
   .h64 {
     font-size: 2.5rem;
+  }
+  :root {
+    --spacing-small: 6px;
+    --spacing-medium: 10px;
+    --spacing-large: 15px;
   }
 }
 
