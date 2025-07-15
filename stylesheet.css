@@ -17,6 +17,9 @@ body {
   --light-color: #f4f4f6;
   --dark-color: #111;
   --grey-color: #484848;
+  --spacing-small: 10px;
+  --spacing-medium: 15px;
+  --spacing-large: 30px;
 }
 
 /* universal */
@@ -331,22 +334,32 @@ a {
 .price-cards {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: var(--spacing-medium);
   align-items: center;
+}
+
+.price-cards .btn {
+  margin-top: var(--spacing-large);
+}
+
+.price-cards img {
+  margin-right: var(--spacing-small);
 }
 
 .pricing-text {
   font-size: 14px;
-  padding-top: 25px;
+  padding-top: var(--spacing-large);
   color: var(--grey-color);
 }
 
-.price-cards .btn {
-  margin-top: 35px;
+.month {
+  font-size: 20px;
+  padding-left: 1%;
 }
 
-.price-cards img {
-  margin-right: 10px;
+.no-card {
+  font-size: 12px;
+  padding-left: 2%;
 }
 
 .price-card {
@@ -356,17 +369,6 @@ a {
   max-width: 400px;
   border-radius: 16px;
   height: fit-content;
-}
-
-.premium-extra-text {
-  font-weight: 100;
-  padding-bottom: 15px;
-  font-size: 14px;
-  max-width: 220px;
-}
-
-.price-card-li {
-  width: 300px;
 }
 
 .simple-card {
@@ -381,8 +383,8 @@ a {
 
 .price-card-description {
   max-width: 300px;
-  padding-top: 10px;
-  padding-bottom: 20px;
+  padding-top: var(--spacing-small);
+  padding-bottom: var(--spacing-medium);
 }
 
 .simple-description {
@@ -393,19 +395,35 @@ a {
   color: #e5e7eb;
 }
 
-.month {
-  font-size: 20px;
-  padding-left: 1%;
+.premium-extra-text {
+  font-weight: 100;
+  padding-bottom: var(--spacing-medium);
+  font-size: 14px;
+  max-width: 220px;
 }
 
-.no-card {
-  font-size: 12px;
-  padding-left: 2%;
+.price-card-li {
+  max-width: 300px;
+}
+
+.price-cards ul li {
+  margin-bottom: var(--spacing-medium);
+  display: flex;
+  align-items: center;
+}
+
+.price-cards ul li:last-child {
+  margin-bottom: 0;
+}
+
+.price-cards li:hover {
+  color: inherit;
 }
 
 .line {
   height: 1px;
-  margin: 20px 0 35px;
+  margin-top: var(--spacing-medium);
+  margin-bottom: var(--spacing-large);
   max-width: 100%;
 }
 
@@ -415,16 +433,6 @@ a {
 
 .premium-line {
   background-color: #494949;
-}
-
-.price-cards ul li {
-  margin-bottom: 15px;
-  display: flex;
-  align-items: center;
-}
-
-.price-cards ul li:last-child {
-  margin-bottom: 0;
 }
 
 /* Media Queries */
