@@ -363,7 +363,6 @@ a {
   }
   .card {
     width: 100%;
-    /* max-height: fit-content; */
     text-align: center;
     justify-items: center;
     max-width: 500px;
@@ -379,6 +378,12 @@ a {
     padding-top: 10px;
     padding-bottom: 0px;
     font-weight: 600;
+  }
+  .card p:nth-of-type(2),
+  .card p:nth-of-type(3) {
+    width: 100%;
+    max-width: none;
+    text-align: left;
   }
 }
 
